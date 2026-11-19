@@ -196,7 +196,7 @@ Dependencies:
 - 3.3 V 供电，I²C SDA/SCL 配置正确。
 - SDA/SCL 需要符合总线电气要求的上拉电阻。
 - BSP 必须启用 CubeMX I²C 外设，并将生成的 LibXR I²C 对象通过 XR_REGISTER 注册。
-- BSP 必须提供并注册 LibXR::RamFS；当前 H7 工程尚未完成 MS5837 所需的 I²C 和 RamFS 集成，本次修改不包含 .ioc、User/ 或 BSP 文件。
+- BSP 必须提供并注册 LibXR::RamFS。
 
 Hardware requirements:
 
@@ -204,4 +204,4 @@ Hardware requirements:
 - 3.3 V power and correctly configured I²C SDA/SCL pins.
 - SDA/SCL pull-ups suitable for the bus electrical characteristics.
 - The BSP must enable an I²C peripheral in CubeMX and register the generated LibXR I²C object with XR_REGISTER.
-- The BSP must provide and register a LibXR::RamFS; the current H7 project does not yet contain the MS5837 I²C and RamFS integration, which is outside this change.
+- The BSP must provide and register a LibXR::RamFS.
